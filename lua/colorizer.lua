@@ -282,7 +282,7 @@ do
 		if #line < i + CSS_HSL_FN_MINIMUM_LENGTH then
 			return
 		end
-		local h, s, l, match_end = line:sub(i):match("^hsl%(%s*(%d+)%s*,%s*(%d+)s*,%s*(%d+)s*%)()")
+		local h, s, l, match_end = line:sub(i):match("^hsl%(%s*(%d+)%s*,%s*(%d+)%s*,%s*(%d+)%s*%)()")
 		if not match_end then
 			return
 		end
